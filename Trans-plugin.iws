@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc826ec-8604-4128-a780-ed239bc4a7fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Trans-plugin.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Trans-plugin.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trans-plugin.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Trans-plugin.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/TransAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/action/TransAction.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +43,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
   </component>
   <component name="RunDashboard">
@@ -86,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574059169341</updated>
       <workItem from="1574059172877" duration="447000" />
-      <workItem from="1574059635822" duration="767000" />
+      <workItem from="1574059635822" duration="2199000" />
     </task>
     <task id="LOCAL-00001" summary="项目配置文件">
       <created>1574059388341</created>
@@ -102,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574059728445</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="翻译插件 配置添加">
+      <created>1574060435914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574060435914</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +139,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目配置文件" />
     <MESSAGE value="添加ignore 文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加ignore 文件" />
+    <MESSAGE value="翻译插件 配置添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="翻译插件 配置添加" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

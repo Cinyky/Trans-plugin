@@ -1,4 +1,4 @@
-package cn.cyy.plugin.trans;
+package cn.cyy.plugin.trans.action;
 
 import cn.cyy.plugin.trans.constant.Constant;
 import cn.cyy.plugin.trans.utils.HttpUtil;

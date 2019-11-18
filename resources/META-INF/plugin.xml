@@ -30,7 +30,7 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="Plugin.TransAction" class="cn.cyy.plugin.trans.TransAction" text="Trans"
+    <action id="Plugin.TransAction" class="cn.cyy.plugin.trans.action.TransAction" text="Trans"
             description="Trans selected word">
       <add-to-group group-id="EditMenu" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="ctrl I"/>
