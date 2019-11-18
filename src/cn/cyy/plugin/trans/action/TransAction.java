@@ -1,19 +1,16 @@
 package cn.cyy.plugin.trans.action;
 
 import cn.cyy.plugin.trans.constant.Constant;
+import cn.cyy.plugin.trans.customize.BallonUtils;
+import cn.cyy.plugin.trans.entity.TransObj;
 import cn.cyy.plugin.trans.utils.HttpUtil;
+import com.google.gson.Gson;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
-import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
-import com.intellij.openapi.ui.popup.Balloon;
-import com.intellij.openapi.ui.popup.JBPopupFactory;
-import com.intellij.ui.JBColor;
 import org.apache.http.util.TextUtils;
-
-import java.awt.*;
 
 public class TransAction extends AnAction {
 
@@ -31,22 +28,13 @@ public class TransAction extends AnAction {
             return;
         }
         String response = HttpUtil.doGet(Constant.baseUrl + selectedText);
-        String s = String.format("获取到的文字是:%s, \r\n 结果是： %s", selectedText, response);
-
-
-        System.out.println(s);
-        showPopupBalloon(mEditor, s);
+        if (TextUtils.isEmpty(response)) {
+            return;
+        }
+        TransObj transObj = new Gson().fromJson(response, TransObj.class);
+        String s = String.format("文字是: %s \r\n 结果是： %s \r\n 释义是： %s ", transObj.getQuery(), transObj.getTranslation(), transObj.getBasic().getExplains());
+        BallonUtils.showPopupBalloon(mEditor, s);
     }
 
-    private void showPopupBalloon(final Editor editor, final String result) {
-        ApplicationManager.getApplication().invokeLater(new Runnable() {
-            public void run() {
-                JBPopupFactory factory = JBPopupFactory.getInstance();
-                factory.createHtmlTextBalloonBuilder(result, null, new JBColor(new Color(186, 238, 186), new Color(73, 117, 73)), null)
-                        .setFadeoutTime(5000)
-                        .createBalloon()
-                        .show(factory.guessBestPopupLocation(editor), Balloon.Position.below);
-            }
-        });
-    }
+
 }
