@@ -1,17 +1,17 @@
 <idea-plugin>
   <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <name>Trans</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="cyy1079276272@163.com" url="https://github.com/Cinyky/Trans-plugin">Trans-plugin cyy</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Excellent trans plugin while coding.<br>
+      Enjoy coding while you occur unrecognized words.<br>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      v0.0.1 <br>
+      selected words & trans word
     ]]>
   </change-notes>
 
@@ -30,6 +30,11 @@
 
   <actions>
     <!-- Add your actions here -->
+    <action id="Plugin.TransAction" class="cn.cyy.plugin.trans.TransAction" text="Trans"
+            description="Trans selected word">
+      <add-to-group group-id="EditMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl I"/>
+    </action>
   </actions>
 
 </idea-plugin>
