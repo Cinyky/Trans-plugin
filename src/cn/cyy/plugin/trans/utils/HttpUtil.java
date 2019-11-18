@@ -1,5 +1,20 @@
 package cn.cyy.plugin.trans.utils;
 
+import org.apache.http.*;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,25 +23,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.NameValuePair;
-import org.apache.http.StatusLine;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
-import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Logger;
 
 /**
  * @author 马弦
@@ -37,6 +33,12 @@ public class HttpUtil {
 
     private static Logger logger = Logger.getLogger(HttpUtil.class);
 
+    private static RequestConfig requestConfig = RequestConfig.custom()
+            .setSocketTimeout(15000)
+            .setConnectTimeout(15000)
+            .setConnectionRequestTimeout(15000)
+            .build();
+
     /**
      * get请求
      * @return
@@ -46,6 +48,7 @@ public class HttpUtil {
             HttpClient client = HttpClients.createDefault();
             //发送get请求
             HttpGet request = new HttpGet(url);
+            request.setConfig(requestConfig);
             HttpResponse response = client.execute(request);
 
             /**请求发送成功，并得到响应**/
@@ -77,6 +80,7 @@ public class HttpUtil {
             HttpClient client = HttpClients.createDefault();
             // 实例化HTTP方法
             HttpPost request = new HttpPost();
+            request.setConfig(requestConfig);
             request.setURI(new URI(url));
 
             //设置参数

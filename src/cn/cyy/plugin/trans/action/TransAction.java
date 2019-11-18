@@ -14,6 +14,8 @@ import org.apache.http.util.TextUtils;
 
 public class TransAction extends AnAction {
 
+    private final String ERROR_STR = "未查询到结果";
+
     @Override
     public void actionPerformed(AnActionEvent e) {
         // TODO: insert action logic here
@@ -32,7 +34,10 @@ public class TransAction extends AnAction {
             return;
         }
         TransObj transObj = new Gson().fromJson(response, TransObj.class);
-        String s = String.format("文字是: %s \r\n 结果是： %s \r\n 释义是： %s ", transObj.getQuery(), transObj.getTranslation(), transObj.getBasic().getExplains());
+        String s = String.format("【词典】  %s \r\n 【结果】 %s \r\n 【释义】 %s ",
+                transObj.getQuery(),
+                transObj.getTranslation() == null ? ERROR_STR : transObj.getTranslation(),
+                transObj.getBasic() == null ? ERROR_STR : (transObj.getBasic().getExplains() == null ? ERROR_STR : transObj.getBasic().getExplains()));
         BallonUtils.showPopupBalloon(mEditor, s);
     }
 

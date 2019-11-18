@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc826ec-8604-4128-a780-ed239bc4a7fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/customize/BallonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/entity/TransObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/success.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trans-plugin.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Trans-plugin.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ballon.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/action/TransAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/action/TransAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/utils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/utils/HttpUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +59,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -104,7 +111,7 @@
       <workItem from="1574059172877" duration="447000" />
       <workItem from="1574059635822" duration="2700000" />
       <workItem from="1574062456512" duration="823000" />
-      <workItem from="1574064800504" duration="1491000" />
+      <workItem from="1574064800504" duration="3008000" />
     </task>
     <task id="LOCAL-00001" summary="项目配置文件">
       <created>1574059388341</created>
@@ -134,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574061977136</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="V0.1.0 pre-release">
+      <created>1574066781912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574066781912</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +171,8 @@
     <MESSAGE value="项目配置文件" />
     <MESSAGE value="添加ignore 文件" />
     <MESSAGE value="翻译插件 配置添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="翻译插件 配置添加" />
+    <MESSAGE value="V0.1.0 pre-release" />
+    <option name="LAST_COMMIT_MESSAGE" value="V0.1.0 pre-release" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
