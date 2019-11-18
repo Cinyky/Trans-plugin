@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fc826ec-8604-4128-a780-ed239bc4a7fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/success.png" afterDir="false" />
+    <list default="true" id="0fc826ec-8604-4128-a780-ed239bc4a7fc" name="Default Changelist" comment="V0.1.0 pre-release">
+      <change afterPath="$PROJECT_DIR$/Trans-plugin-v0.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trans-plugin.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Trans-plugin.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ballon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/action/TransAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/action/TransAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/utils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/cyy/plugin/trans/utils/HttpUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/realease" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -111,7 +108,7 @@
       <workItem from="1574059172877" duration="447000" />
       <workItem from="1574059635822" duration="2700000" />
       <workItem from="1574062456512" duration="823000" />
-      <workItem from="1574064800504" duration="3008000" />
+      <workItem from="1574064800504" duration="3379000" />
     </task>
     <task id="LOCAL-00001" summary="项目配置文件">
       <created>1574059388341</created>
@@ -148,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574066781912</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="V0.1.0 pre-release 代码coding完成">
+      <created>1574068133817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574068133817</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +176,8 @@
     <MESSAGE value="添加ignore 文件" />
     <MESSAGE value="翻译插件 配置添加" />
     <MESSAGE value="V0.1.0 pre-release" />
-    <option name="LAST_COMMIT_MESSAGE" value="V0.1.0 pre-release" />
+    <MESSAGE value="V0.1.0 pre-release 代码coding完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="V0.1.0 pre-release 代码coding完成" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

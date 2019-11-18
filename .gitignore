@@ -149,6 +149,7 @@ gen
 
 # Package Files #
 *.jar
+!Trans-plugin*.jar
 *.war
 *.nar
 *.ear
