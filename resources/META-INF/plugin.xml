@@ -5,13 +5,14 @@
   <vendor email="cyy1079276272@163.com" url="https://github.com/Cinyky/Trans-plugin">Trans-plugin cyy</vendor>
 
   <description><![CDATA[
-      Excellent trans plugin while coding.<br>
-      Enjoy coding while you occur unrecognized words.<br>
+      Excellent Plugin for translate English to Chinese.<br>
+      <li>1. Choose the word you want translate.</li>
+      <li>2. Press Command + I.</li>
     ]]></description>
 
   <change-notes><![CDATA[
-      v0.0.1 <br>
-      selected words & trans word
+      <li>0.1.1 : New: Config by yourself.</li>
+      <li>0.1.0 : init </li>
     ]]>
   </change-notes>
 
@@ -26,6 +27,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <applicationConfigurable instance="cn.cyy.plugin.trans.view.Configuration"/>
   </extensions>
 
   <actions>
@@ -33,6 +35,7 @@
     <action id="Plugin.TransAction" class="cn.cyy.plugin.trans.action.TransAction" text="Trans"
             description="Trans selected word">
       <add-to-group group-id="EditMenu" anchor="first"/>
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="ctrl I"/>
     </action>
   </actions>
